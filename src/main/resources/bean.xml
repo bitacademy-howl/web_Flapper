@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 사용자가 정의한 bean 을 이곳에 정의하여 사용 -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="testBean" class="com.flapper.test.BeanClassInterface.Mybean">
+		<property name="message" value="Hello, this is Bean Sample!!" />
+	</bean>
+	
+	<bean id="beanObj" class="com.flapper.test.BeanClassInterface.BeanIsClassification">
+		<property name="date" value="2018/10/11" />
+		<property name="musicTitle" value="밤편지" />
+	</bean>
+	
+</beans>
